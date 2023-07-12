@@ -1,0 +1,6 @@
+package com.shopmax.Dto;
+
+
+public class ItemRankDto {
+
+}

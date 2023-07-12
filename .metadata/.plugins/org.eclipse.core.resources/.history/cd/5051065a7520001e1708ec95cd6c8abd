@@ -1,0 +1,27 @@
+package com.AIS.Dto;
+
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.*;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class AiFormDto {
+	private Long id;
+	
+	@NotBlank(message = "상품명은 필수 입력입니다.")
+	private String itemNm;
+	
+	@NotNull(message = "가격은 필수 입력입니다.")
+	private int price;
+	
+	@NotNull(message = "재고는 필수 입력입니다.")
+	private int stockNumber;
+	
+	@NotBlank(message = "상품 상세설명은 필수 입력입니다.")
+	private String itemDetail;
+	
+	private ItemSellStatus itemSellStatus;
+}

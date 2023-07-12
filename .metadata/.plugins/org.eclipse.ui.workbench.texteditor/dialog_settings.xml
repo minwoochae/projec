@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="true"/>
+		<item key="wholeword" value="true"/>
+		<item key="incremental" value="true"/>
+		<item key="isRegEx" value="true"/>
+		<item key="selection" value=".dropdown"/>
+		<list key="findhistory">
+			<item value=".dropdown"/>
+			<item value="dropdown"/>
+			<item value="LEA"/>
+			<item value="lea"/>
+			<item value="len"/>
+			<item value="getItemRankList"/>
+			<item value="sear"/>
+			<item value="주문취소"/>
+			<item value="이전"/>
+			<item value="row mb-5"/>
+			<item value="items"/>
+			<item value="orders"/>
+			<item value="maxPage"/>
+			<item value="getoderList"/>
+			<item value="page-link"/>
+		</list>
+		<list key="replacehistory">
+			<item value="items"/>
+			<item value=""/>
+			<item value="orders"/>
+			<item value="/images"/>
+			<item value="ItemDetail"/>
+			<item value="projec"/>
+			<item value="Projec"/>
+			<item value="free"/>
+			<item value="Free"/>
+			<item value="bb"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="625"/>
+		<item key="DIALOG_Y_ORIGIN" value="266"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="420"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

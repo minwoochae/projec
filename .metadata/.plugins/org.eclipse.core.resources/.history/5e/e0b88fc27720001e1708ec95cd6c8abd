@@ -1,0 +1,8 @@
+package com.shopmax.Dto;
+
+public interface ItemRankDto {
+	int getNum();
+	long getId();
+	String getItemNm();
+	Int getPrice();
+}

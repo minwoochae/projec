@@ -1,0 +1,5 @@
+package com.shopmax.repository;
+
+public interface ItemRepositoryCustom {
+	Page<Item> getAdminItemPage
+}

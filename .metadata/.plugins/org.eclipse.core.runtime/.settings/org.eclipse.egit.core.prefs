@@ -1,0 +1,4 @@
+GitRepositoriesView.GitDirectories=C\:\\SpringProject\\myshop\\.git;C\:\\SpringProject\\spring-board\\.git;C\:\\SpringProject\\Spring-project\\.git;
+GitRepositoriesView.GitDirectories.relative=myshop\\.git;spring-board\\.git;Spring-project\\.git;
+core_autoIgnoreDerivedResources=false
+eclipse.preferences.version=1

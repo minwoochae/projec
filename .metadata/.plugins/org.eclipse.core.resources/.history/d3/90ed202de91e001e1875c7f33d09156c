@@ -1,0 +1,9 @@
+package com.shopmax.Dto;
+
+import lombok.*;
+
+@Getter
+@Setter
+public class OrderHistDto {
+	private Long orderId
+}

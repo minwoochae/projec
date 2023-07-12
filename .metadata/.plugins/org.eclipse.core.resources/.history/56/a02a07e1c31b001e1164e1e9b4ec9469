@@ -1,0 +1,12 @@
+package com.shopmax.repository;
+
+import java.awt.print.Pageable;
+
+import org.springframework.data.domain.Page;
+
+import com.shopmax.Dto.ItemSearchDto;
+import com.shopmax.entity.Item;
+
+public interface ItemRepositoryCustom {
+	Page<Item> getAdminItemPage(ItemSearchDto itemSearchDto, Pageable pageable);
+}

@@ -1,0 +1,19 @@
+package com.shopmax.Dto;
+
+import java.util.List;
+
+import com.shopmax.constant.OrderStatus;
+
+import lombok.*;
+
+@Getter
+@Setter
+public class OrderHistDto {
+	private Long orderId; //주문아이디
+	
+	private String orderDate; //주문날짜
+	
+	private OrderStatus orderStatus;
+	
+	private List<OrderItemDto> orderItemDtos
+}

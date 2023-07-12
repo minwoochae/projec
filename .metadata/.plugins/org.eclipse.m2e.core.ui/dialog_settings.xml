@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\SpringProject\hotel (2)"/>
+			<item value="C:\SpringProject\hotel"/>
+			<item value="C:\SpringProject\AIS"/>
+			<item value="C:\SpringProject\shopmax"/>
+			<item value="C:\SpringProject\myshop"/>
+			<item value="C:\SpringProject\projec"/>
+			<item value="C:\SpringProject\jspproject"/>
+			<item value="C:\SpringProject\Spring-project"/>
+			<item value="C:\SpringProject\freeproject"/>
+			<item value="C:\SpringProject\board2"/>
+			<item value="C:\SpringProject\spring-board"/>
+			<item value="C:\SpringProject\Spring-quiz"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

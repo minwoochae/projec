@@ -1,0 +1,9 @@
+package com.shopmax.repository;
+
+import org.springframework.data.domain.Page;
+
+import com.shopmax.entity.Item;
+
+public interface ItemRepositoryCustom {
+	Page<Item> getAdminItemPage(ItemSearchDto itemSearchDto, Pageble pageble);
+}

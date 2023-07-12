@@ -1,0 +1,33 @@
+package com.AIS.entity;
+
+
+import com.myshop.entity.BaseEntity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Setter
+@Getter
+@Table(name ="order_item")
+@ToString
+public class OrderItem extends BaseEntity{
+	@Id
+	@Column(name = "order_item_id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	@ManyToOne
+	@JoinColumn(name = "ai_id")
+	private Ai ai;
+	
+	@ManyToOne
+	@JoinColumn(name = "order_id")
+	private Order order;
+	
+	@ManyToOne
+	@JoinColumn(name = "sitter_id")
+	private SitterPackage sitterPackage;
+	
+	
+}

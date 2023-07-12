@@ -1,0 +1,22 @@
+package com.shopmax.Dto;
+
+import com.shopmax.entity.OrderItem;
+
+import lombok.*;
+
+@Getter
+@Setter
+public class OrderItemDto {
+	public OrderItemDto(OrderItem orderItem, String imgUrl) {
+		
+	}
+	
+	public String itemNm; //상품명
+	
+	
+	public int count; //주문수량
+	
+	
+	
+	
+}

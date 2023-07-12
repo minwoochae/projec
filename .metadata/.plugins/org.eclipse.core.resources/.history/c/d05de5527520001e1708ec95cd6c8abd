@@ -1,0 +1,5 @@
+package com.AIS.Dto;
+
+public class AiFormDto {
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/layout1}">
+<!-- 각 페이지의 CSS가 작성될 위치 -->
+<th:block layout:fragment="css">
+<style>
+
+</style>
+</th:block>
+<div layout:fragment="content">
+</div>
+	<!-- 각 페이지의 스크립트가 작성될 위치 -->
+<th:block layout:fragment="script">
+	<script th:inline="javascript">
+	$(document).ready(function(){
+		//에러 메세지 출력
+    	var errorMessage = [[${errorMessage}]];
+    	if(errorMessage != null){
+        	alert(errorMessage);
+    	}
+		bindDomEvent(); //이벤트 등록
+	});
+	
+	//천단위 콤마찍는 함수
+	function inputNumberFormat(obj){
+		let value =obj.value; //입력한 데이터
+		value = Number(value.replaceAll(',' , '')); //콤마가 있으면 없애준다.
+
+		if(isNaN(value)){
+			//숫자가 아니면 price input창의 값을 0으로 바꾼다.
+			obj.value = 0;
+		}else {
+			//숫자면 콤마(,) 붙여준다.
+			const formatValue = value.toLocaleString('ko-KR');
+			obj.value = formatValue;
+		} 
+	}
+	
+	//상품등록 버튼을 누를때 천단위 콤마를 제거해준다.
+	function beforeSubmit(){
+		const f = document.itemForm;
+		let price = f.price.value;
+		f.price.value =  Number(price.replaceAll(',',''));
+		f.submit();
+	}
+
+	
+	//파일 첨부시 확정자가 이미지 파일먼저 검사한다.
+    function bindDomEvent(){
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();  //이미지 파일명
+            var fileExt = fileName.substring(fileName.lastIndexOf(".")+1); // 확장자 추출
+            fileExt = fileExt.toLowerCase(); //소문자 변환
+
+            if(fileExt != "jpg" && fileExt != "jpeg" && fileExt != "gif" && fileExt != "png" && fileExt != "bmp"){
+                alert("이미지 파일만 등록이 가능합니다.");
+                return;
+            }
+
+            $(this).siblings(".custom-file-label").html(fileName);
+        });
+    }
+	</script>
+</th:block>
+</html>

@@ -1,0 +1,36 @@
+package com.AIS.entity;
+
+
+import java.time.LocalDateTime;
+import java.util.*;
+
+import com.AIS.constant.*;
+import com.myshop.entity.BaseEntity;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Getter
+@Setter
+@Table(name = "orders")
+@Entity
+@ToString
+public class Order extends BaseEntity{
+	@Id
+	@Column(name="order_id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	@ManyToOne(fetch =FetchType.LAZY)
+	@JoinColumn(name ="member_id")
+	private Member member;
+	
+	@Enumerated(EnumType.STRING)
+	private OrderStatus orderStatus; //주문상태
+	
+	private LocalDateTime orderDate; //주문일
+	
+
+
+	
+}
